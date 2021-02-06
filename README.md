@@ -5,6 +5,10 @@
 
 <br>
 
+<h2><img src="images/descricao.png" width=50px/> Descrição </h2>
+
+<br>
+
 <p> Alguns códigos onde pratico essa maravilhosa arte de raspagem de dados. </p>
 
 <br>
