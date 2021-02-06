@@ -1,8 +1,6 @@
-<div>Icons made by <a href="" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
 <h1 align="center">
   <img src="images/spider.png" float="center" width=20%/>
-  <p align="center"><strong align="center">Statistic</strong></p>
+  <p align="center"><strong align="center"> Web Scrap </strong></p>
 </h1>
 
 <br>
@@ -35,6 +33,5 @@
 <br>
 <h2> Agradecimentos </h2>
 <ul>
-  <li></li>
-  <li></li>
+  <li><div>Icons made by <a href="" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></li>
 </ul>
