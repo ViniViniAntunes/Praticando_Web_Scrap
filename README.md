@@ -5,7 +5,7 @@
 
 <br>
 
-<h2> Alguns códigos onde pratico essa maravilhosa arte de raspagem de dados. </h2>
+<p> Alguns códigos onde pratico essa maravilhosa arte de raspagem de dados. </p>
 
 <br>
 
