@@ -9,7 +9,7 @@
 
 <br>
 
-<h2> Site fonte </h2>
+<h2><img src="images/fonte.png" width=50px/> Site fonte </h2>
 
 <ul>
     <li><a href="https://www.zapimoveis.com.br/"><img src="https://assets.zap.com.br/assets/v5.92.1/zap.svg?b3f59ed8e7ccc42f6e8b44e5db9a746e" width=50px/></a>.</li>
@@ -17,7 +17,7 @@
 
 <br>
 
-<h2> Autor </h2>
+<h2><img src="images/cracha.png" width=50px/> Autor </h2>
 
 <table>
   <tr>
@@ -27,7 +27,7 @@
 
 <br>
 
-<h2> Agradecimentos </h2>
+<h2><img src="images/agradecimento.png" width=50px/> Agradecimentos </h2>
 <ul>
   <li><div>Icons made by <a href="" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></li>
 </ul>
