@@ -18,6 +18,7 @@
 <ul>
   <li><a href="https://www.zapimoveis.com.br/"><img src="https://assets.zap.com.br/assets/v5.92.1/zap.svg?b3f59ed8e7ccc42f6e8b44e5db9a746e" width=50px/></a></li>
   <li><a href="https://wiki.gugacast.com/P%C3%A1gina_principal"><img src="images/gugacast_wiki.png" width=50px/></a></li>
+  <li><a href="https://www.fundamentus.com.br/resultado.php"><img src="https://www.fundamentus.com.br/img/logo.gif" width=50px/></a></li>
 </ul>
 
 <br>
