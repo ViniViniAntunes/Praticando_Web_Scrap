@@ -82,7 +82,7 @@ for app in ids.keys():
     # Tratando o html
     html = trata_html(html)
 
-    # Instanciando um objeto da classe BeautifulSoup
+    # Instanciando a classe BeautifulSoup
     soup = BeautifulSoup(html, 'html.parser')
     
     # Armazenando o rank do app
@@ -131,21 +131,21 @@ for app in apps:
         if app == 'Nubank':
             
             # Setando as posições das anotações do app da Nubank
-            y_pos = -5
-            x_pos = -5
+            y_pos = -15
+            x_pos = 10
         
         # Condição para mudar as posições das anotações do app da Neon
         elif app == 'Neon':
             
             # Setando as posições das anotações do app da Neon
-            y_pos = -5
+            y_pos = -15
             x_pos = -5
         
         # Condição para mudar as posições das anotações do app da C6
         elif app == 'C6':
             
             # Setando as posições das anotações do app da C6
-            y_pos = -15
+            y_pos = 5
             x_pos = 10
         
         # Condição para mudar as posições das anotações do app da Inter
@@ -166,7 +166,7 @@ for app in apps:
         elif app == 'Next':
             
             # Setando as posições das anotações do app da Next
-            y_pos = -15
+            y_pos = 5
             x_pos = 10
 
         # Condição para mudar as posições das anotações do app da PAN
@@ -186,7 +186,7 @@ for app in apps:
             plt.annotate(anotacao, (x,y), # coordenada da anotação
                          textcoords="offset points", # como posicionar a anotação
                          xytext=(x_pos, y_pos), # distância da anotação para o seu respectivo ponto (x,y)
-                         ha='center', # alinhamento horizontal da anotação. Pode ser 'left', 'right' or 'center'
+                         ha='center', # alinhamento horizontal da anotação. Pode ser 'left', 'right' ou 'center'
                          fontsize=20, # tamanho da fonte da anotação
                          color=cores[app]) # cor da anotação
         
