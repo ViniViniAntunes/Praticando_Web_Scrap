@@ -103,8 +103,15 @@ df_rank.to_csv(path + 'bank_rank_iOS.csv', index=False)
 df_rank = pd.read_csv(path + 'bank_rank_iOS.csv')
 df_rank['Data'] = df_rank['Data'].apply(lambda x: datetime.datetime.strptime(x, '%d/%m/%Y'))
 
-ultimos_30_dias = df_rank.iloc[-28:, :]
+# Agrupando por semana
+semana = {df_rank['Data'][i].isocalendar()[1]: df_rank['Data'][i].date() for i in range(len(df_rank))}
+df_rank['Semana'] = df_rank['Data'].apply(lambda x: semana[x.isocalendar()[1]])
+df_rank_semanal = df_rank.groupby('Semana').mean().astype(int)
+df_rank.drop('Semana', axis=1, inplace=True)
+df_rank_semanal.reset_index(inplace=True)
 
+
+# Definindo as cores
 cores = {'Nubank': '#8A06BD',
          'Neon': '#00D8D8',
          'C6': '#242424',
@@ -114,9 +121,9 @@ cores = {'Nubank': '#8A06BD',
          'PAN': '#00AFFF'}
 
 # Configurando as figura
-plt.figure(figsize=(20, 10))
+plt.figure(figsize=(12, 10))
 
-apps = ultimos_30_dias.iloc[:-1, 3:].mean().sort_values().index
+apps = df_rank_semanal.iloc[:, 1:].mean().sort_values().index
 
 # Iterando em cada app
 for app in apps:
@@ -125,23 +132,23 @@ for app in apps:
     cont = 0
     
     # Plotando o gráfico para cada app
-    plt.plot(ultimos_30_dias['Data'], ultimos_30_dias[app], color=cores[app], label=app, linewidth=5)
+    plt.plot(df_rank_semanal['Semana'], df_rank_semanal[app], color=cores[app], label=app, linewidth=5)
     
     # Iternando em cada par (data, ranking) para cada app
-    for x,y in zip(ultimos_30_dias['Data'], ultimos_30_dias[f'{app}']):
+    for x,y in zip(df_rank_semanal['Semana'], df_rank_semanal[f'{app}']):
         
         # Condição para mudar as posições das anotações do app da Nubank
         if app == 'Nubank':
             
             # Setando as posições das anotações do app da Nubank
-            y_pos = -15
+            y_pos = 5
             x_pos = 10
         
         # Condição para mudar as posições das anotações do app da Neon
         elif app == 'Neon':
             
             # Setando as posições das anotações do app da Neon
-            y_pos = -15
+            y_pos = 5
             x_pos = -5
         
         # Condição para mudar as posições das anotações do app da C6
@@ -162,7 +169,7 @@ for app in apps:
         elif app == 'Digio':
             
             # Setando as posições das anotações do app da Digio
-            y_pos = -15
+            y_pos = 5
             x_pos = 10
 
         # Condição para mudar as posições das anotações do app da Next
@@ -180,7 +187,7 @@ for app in apps:
             x_pos = 10
 
         # Condição para mostrar não mostrar todas as anotações
-        if cont % 2 == 0 or cont == ultimos_30_dias.shape[0] - 1:
+        if cont % 2 == 0 or cont == df_rank_semanal.shape[0] - 1:
 
             # label -> anotação que vai aparecer
             anotacao = f'{y}'
@@ -196,7 +203,7 @@ for app in apps:
         # Incrementanndo o contador
         cont += 1
 
-limite = ultimos_30_dias.iloc[:, 3:].max().max() + 5
+limite = df_rank_semanal.iloc[:, 1:].max().max() + 5
 
 # Invertendo o eixo y
 plt.ylim(limite, -1)
@@ -205,16 +212,16 @@ plt.ylim(limite, -1)
 plt.grid(True)
 
 # Definindo o título
-plt.title('Ranking AppStore (Últimos 30 dias) - Bancos digitais', fontsize=30)
+plt.title('Ranking AppStore (média semanal) - Bancos digitais', fontsize=30)
 
 # Definindo a legenda
-plt.legend(labels=apps, fontsize=18, loc=(0.01, 0.01))
+plt.legend(labels=apps, fontsize=12, loc=0, fancybox=True)
 
 # Definindo o label do eixo y
 plt.ylabel('Ranking', fontsize=25)
 
 # Definindo o label do eixo x
-plt.xlabel('Dia', fontsize=25)
+plt.xlabel('Semana', fontsize=25)
 
 # Formatando os ticks
 plt.xticks(fontsize=16, rotation=20)
