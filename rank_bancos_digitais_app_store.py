@@ -101,19 +101,22 @@ df_rank = pd.concat([df_rank, novos], ignore_index=True)
 df_rank.to_csv(path + 'bank_rank_iOS.csv', index=False)
 
 df_rank = pd.read_csv(path + 'bank_rank_iOS.csv')
+df_rank['Data'] = df_rank['Data'].apply(lambda x: datetime.datetime.strptime(x, '%d/%m/%Y'))
+
+ultimos_30_dias = df_rank.iloc[-28:, :]
 
 cores = {'Nubank': '#8A06BD',
          'Neon': '#00D8D8',
          'C6': '#242424',
          'Inter': '#FF7A01',
-         'Digio': '#002850',
+         'Digio': '#007ebd',
          'Next': '#01FF5E',
          'PAN': '#00AFFF'}
 
 # Configurando as figura
 plt.figure(figsize=(20, 10))
 
-apps = df_rank.iloc[:-1, 3:].mean().sort_values().index
+apps = ultimos_30_dias.iloc[:-1, 3:].mean().sort_values().index
 
 # Iterando em cada app
 for app in apps:
@@ -122,10 +125,10 @@ for app in apps:
     cont = 0
     
     # Plotando o gráfico para cada app
-    plt.plot(df_rank['Data'], df_rank[app], color=cores[app], label=app, linewidth=5)
+    plt.plot(ultimos_30_dias['Data'], ultimos_30_dias[app], color=cores[app], label=app, linewidth=5)
     
     # Iternando em cada par (data, ranking) para cada app
-    for x,y in zip(df_rank['Data'], df_rank[f'{app}']):
+    for x,y in zip(ultimos_30_dias['Data'], ultimos_30_dias[f'{app}']):
         
         # Condição para mudar as posições das anotações do app da Nubank
         if app == 'Nubank':
@@ -177,7 +180,7 @@ for app in apps:
             x_pos = 10
 
         # Condição para mostrar não mostrar todas as anotações
-        if cont % 1 == 0 or cont == df_rank.shape[0] - 1:
+        if cont % 2 == 0 or cont == ultimos_30_dias.shape[0] - 1:
 
             # label -> anotação que vai aparecer
             anotacao = f'{y}'
@@ -193,7 +196,7 @@ for app in apps:
         # Incrementanndo o contador
         cont += 1
 
-limite = df_rank.iloc[:, 3:].max().max() + 5
+limite = ultimos_30_dias.iloc[:, 3:].max().max() + 5
 
 # Invertendo o eixo y
 plt.ylim(limite, -1)
@@ -202,7 +205,7 @@ plt.ylim(limite, -1)
 plt.grid(True)
 
 # Definindo o título
-plt.title('Ranking AppStore - Bancos digitais', fontsize=30)
+plt.title('Ranking AppStore (Últimos 30 dias) - Bancos digitais', fontsize=30)
 
 # Definindo a legenda
 plt.legend(labels=apps, fontsize=18, loc=(0.01, 0.01))
