@@ -16,10 +16,10 @@
 <h2><img src="images/fonte.png" width=50px/> Site fonte </h2>
 
 <ul>
-  <li><a href="https://www.zapimoveis.com.br/"><img src="https://assets.zap.com.br/assets/v5.92.1/zap.svg?b3f59ed8e7ccc42f6e8b44e5db9a746e" width=50px/></a></li>
-  <li><a href="https://wiki.gugacast.com/P%C3%A1gina_principal"><img src="images/gugacast_wiki.png" width=50px/></a></li>
-  <li><a href="https://www.fundamentus.com.br/resultado.php"><img src="https://www.fundamentus.com.br/img/logo.gif" width=200px/></a></li>
-  <li><a href="https://www.alura.com.br/"><img src="https://www.alura.com.br/assets/img/home/alura-logo.1616501197.svg" width=200px/></a></li>
+  <li><a href="https://www.zapimoveis.com.br/" target="_blank"><img src="https://assets.zap.com.br/assets/v5.92.1/zap.svg?b3f59ed8e7ccc42f6e8b44e5db9a746e" width=50px/></a></li>
+  <li><a href="https://wiki.gugacast.com/P%C3%A1gina_principal" target="_blank"><img src="images/gugacast_wiki.png" width=50px/></a></li>
+  <li><a href="https://www.fundamentus.com.br/resultado.php" target="_blank"><img src="https://www.fundamentus.com.br/img/logo.gif" width=200px/></a></li>
+  <li><a href="https://www.alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-para-empresas.1616501197.svg" width=200px/></a></li>
 </ul>
 
 <br>
@@ -36,5 +36,5 @@
 
 <h2><img src="images/agradecimento.png" width=50px/> Agradecimentos </h2>
 <ul>
-  <li><div>Icons made by <a href="" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></li>
+  <li><div>Icons made by <a href="" title="iconixar" target="_blank">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></div></li>
 </ul>
