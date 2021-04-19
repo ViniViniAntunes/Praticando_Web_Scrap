@@ -9,7 +9,7 @@
 
 <br>
 
-<p> Alguns códigos onde pratico essa maravilhosa arte de raspagem de dados. </p>
+<p> Alguns códigos onde pratico a maravilhosa arte de raspagem de dados. </p>
 
 <br>
 
