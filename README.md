@@ -19,7 +19,7 @@
   <li><a href="https://www.zapimoveis.com.br/" target="_blank"><img src="https://assets.zap.com.br/assets/v5.92.1/zap.svg?b3f59ed8e7ccc42f6e8b44e5db9a746e" width=50px/></a></li>
   <li><a href="https://wiki.gugacast.com/P%C3%A1gina_principal" target="_blank"><img src="images/gugacast_wiki.png" width=50px/></a></li>
   <li><a href="https://www.fundamentus.com.br/resultado.php" target="_blank"><img src="https://www.fundamentus.com.br/img/logo.gif" width=200px/></a></li>
-  <li><a href="https://cursos.alura.com.br/user/viniantunes" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-para-empresas.1616501197.svg" width=200px/></a></li>
+  <li><a href="https://cursos.alura.com.br/user/viniantunes" target="_blank"><img src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg" width=200px/></a></li>
 </ul>
 
 <br>
