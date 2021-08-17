@@ -19,7 +19,7 @@
   <li><a href="https://www.zapimoveis.com.br/" target="_blank"><img src="https://assets.zap.com.br/assets/v5.92.1/zap.svg?b3f59ed8e7ccc42f6e8b44e5db9a746e" width=50px/></a></li>
   <li><a href="https://wiki.gugacast.com/P%C3%A1gina_principal" target="_blank"><img src="images/gugacast_wiki.png" width=50px/></a></li>
   <li><a href="https://www.fundamentus.com.br/resultado.php" target="_blank"><img src="https://www.fundamentus.com.br/img/logo.gif" width=200px/></a></li>
-  <li><a href="https://cursos.alura.com.br/user/viniantunes" target="_blank"><img src="https://instagram.fcgh14-1.fna.fbcdn.net/v/t51.2885-19/s320x320/128822670_766026937591682_7729428230273503865_n.jpg?tp=1&_nc_ht=instagram.fcgh14-1.fna.fbcdn.net&_nc_ohc=sqSUiHlc3lQAX_x-gXA&edm=ABfd0MgAAAAA&ccb=7-4&oh=965bb2b0feaae8b22c2cfa6778414937&oe=60A4435B&_nc_sid=7bff83" width=50px/></a></li>
+  <li><a href="https://cursos.alura.com.br/user/viniantunes" target="_blank"><img src="https://play-lh.googleusercontent.com/IDLZXWHLCVun428g_YGnR2HgnoIUlIRNfkmEEM0hmrzhBKZrhJ5UwM0_eHaWQT4gXAs" width=50px/></a></li>
 </ul>
 
 <br>
