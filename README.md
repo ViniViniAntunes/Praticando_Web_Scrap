@@ -16,7 +16,7 @@
 <h2><img src="images/fonte.png" width=50px/> Site fonte </h2>
 
 <ul>
-  <li><a href="https://www.zapimoveis.com.br/" target="_blank"><img src="https://assets.zap.com.br/assets/v5.92.1/zap.svg?b3f59ed8e7ccc42f6e8b44e5db9a746e" width=50px/></a></li>
+  <li><a href="https://www.zapimoveis.com.br/" target="_blank"><img src="https://media.licdn.com/dms/image/C4D0BAQFwSTFSqt0E7g/company-logo_200_200/0/1599625801600?e=2147483647&v=beta&t=nZ3jboKlx1njYherDoXytBNQhujlNKORzxSW_01ksj4" width=50px/></a></li>
   <li><a href="https://wiki.gugacast.com/P%C3%A1gina_principal" target="_blank"><img src="images/gugacast_wiki.png" width=50px/></a></li>
   <li><a href="https://www.fundamentus.com.br/resultado.php" target="_blank"><img src="https://www.fundamentus.com.br/img/logo.gif" width=200px/></a></li>
   <li><a href="https://cursos.alura.com.br/user/viniantunes" target="_blank"><img src="https://play-lh.googleusercontent.com/IDLZXWHLCVun428g_YGnR2HgnoIUlIRNfkmEEM0hmrzhBKZrhJ5UwM0_eHaWQT4gXAs" width=50px/></a></li>
